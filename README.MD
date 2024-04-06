@@ -1,4 +1,4 @@
-<a href="#thoughtProcess">Jump To Though Process Section</a>
+<a href="#currentProgress">Jump To Current Progress Section</a>
 
 # SEA Stage 2 - Data Catalog Project
 
@@ -44,14 +44,20 @@ This is the instructions, requirements, and starter for stage two of the Snap En
 
 3. Submit the URL to your published website and the link to your Github repository to the google form in your email.
 
-# Progress
-<section id="thoughProcess">
+# Current Progress
+<style>
+strong{
+color: red;
+}
+</style>
+<section id="currentProgress">
 <p>As of right now what I have been able to implement only displays when pressing
 the remove card button.
 </p>
 <ul>
-    <li>Project is being edited in VIM.<li> 
-    <li>And using <strong>python</strong> in
+    <li>Project is being edited in VIM.<li>
+    <li>havent gone over javascript in class so needed to learn that first!</li>
+    <li>Used <strong>python</strong> in
     <strong>terminal</strong> to <strong>locally host</strong> the website in order to bypass <strong>cors runtime errors</strong> where the
     browser is <strong>unable to access local files</strong> due to <strong>security restrictions</strong>.
     <li>Started off attempting to use <strong>csv file</strong> data acquired from <a href="https://www.kaggle.com/datasets/jummyegg/rawg-game-dataset?resource=download">Here</a> by parsing into a bunch of arrays
