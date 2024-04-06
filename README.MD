@@ -50,11 +50,12 @@ This is the instructions, requirements, and starter for stage two of the Snap En
 the remove card button.
 </p>
 <ul>
-    <li>Project is being edited in VIM.<li>
-    <li>havent gone over javascript in class so needed to learn that first!</li>
+    <li>Project is being edited in VIM.</li>
+    <li>Haven't gone over javascript in class so needed to learn that first!</li>
     <li>Used <strong>python</strong> in
     <strong>terminal</strong> to <strong>locally host</strong> the website in order to bypass <strong>cors runtime errors</strong> where the
     browser is <strong>unable to access local files</strong> due to <strong>security restrictions</strong>.
+    </li>
     <li>Started off attempting to use <strong>csv file</strong> data acquired from <a href="https://www.kaggle.com/datasets/jummyegg/rawg-game-dataset?resource=download">Here</a> by parsing into a bunch of arrays
     with strings. Ended up using an online converter to convert <strong>csv file to json</strong>
     in preparation of possible future api integration. Used fetch in js to process this data.</li>
