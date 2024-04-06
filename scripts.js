@@ -39,10 +39,44 @@ let titles = [
 // Your final submission should have much more data than this, and
 // you should use more than just an array of strings to store it all.
 
-// attempting the use of IGD API
-const apiUrl =
-  "https://id.twitch.tv/oauth2/token?client_id=rw59y9anhhaeh0gosyydtkv7fm5a66&client_secret=wziq4nlv629nshpnwb0d1hxzjzvsyk&grant_type=client_credentials";
+// attempting the use of game data from: https://www.kaggle.com/datasets/jummyegg/rawg-game-dataset?resource=download
+function readCsv() {
+  fetch("game_info.csv")
+    .then((response) => response.txt())
+    .then((text) => {
+      console.log(text);
+    });
+  /*  let reader = new FileReader();
+  reader.readAsText(file);
 
+  const cardContainer = document.getElementById("card-container");
+  cardContainer.innerHTML = "";
+  const templateCard = document.querySelector(".card");
+
+  reader.onload = function (event) {
+    //read file data to variable
+    let csvData = event.target.result;
+    //split data by line break making an array of rows
+    //assign to rowData
+    let rowData = csvdata.split("\n");
+
+    //loop for created array of rows rowData
+    //for (var row = 1; row < rowData.length; row++)
+    //{}
+    //Testing first 10 rows first
+    //display data on the webpage table
+    //skip first row, row = 0, since that is the row of headers
+    for (let row = 1; row <= 10; row++) {
+      //split row by colon ' to get an array of each data
+      //respective to its header on the csv
+      rowCols = rowData[row].split(",");
+      for (let col = 0; col < rowCols.length; col++) {
+        console.log("Data: ", rowCols[col], " , ");
+        console.log("\n");
+      }
+    }
+  };*/
+}
 
 // This function adds cards the page to display the data in the array
 function showCards() {
@@ -68,6 +102,7 @@ function showCards() {
     editCardContent(nextCard, title, imageURL); // Edit title and image
     cardContainer.appendChild(nextCard); // Add new card to the container
   }
+  readCsv();
 }
 
 function editCardContent(card, newTitle, newImageURL) {
