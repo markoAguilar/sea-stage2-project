@@ -56,9 +56,14 @@ the remove card button.
     <strong>terminal</strong> to <strong>locally host</strong> the website in order to bypass <strong>cors runtime errors</strong> where the
     browser is <strong>unable to access local files</strong> due to <strong>security restrictions</strong>.
     </li>
-    <li>Started off attempting to use <strong>csv file</strong> data acquired from <a href="https://www.kaggle.com/datasets/jummyegg/rawg-game-dataset?resource=download">Here</a> by parsing into a bunch of arrays
+    <li>Started off attempting to use <strong>csv file</strong> data acquired from <a target="_blank" href="https://www.kaggle.com/datasets/jummyegg/rawg-game-dataset?resource=download">Here</a> by parsing into a bunch of arrays
     with strings. Ended up using an online converter to convert <strong>csv file to json</strong>
     in preparation of possible future api integration. Used fetch in js to process this data.</li>
     <li>to be continued...</li>
 </ul>
 </section>
+
+<h3>Screenshots</h3>
+<img title="Some Progress!" alt="currentProgress" src="images/scr1.png" width="400px">
+<img title="More Progress!" alt="currentProgress2" src="images/scr2.png"
+width="400px">
