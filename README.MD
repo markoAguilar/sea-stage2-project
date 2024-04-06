@@ -51,7 +51,6 @@ the remove card button.
 </p>
 <ul>
     <li>Project is being edited in VIM.</li>
-    <li>Haven't gone over javascript in class so needed to learn that first!</li>
     <li>Used <strong>python</strong> in
     <strong>terminal</strong> to <strong>locally host</strong> the website in order to bypass <strong>cors runtime errors</strong> where the
     browser is <strong>unable to access local files</strong> due to <strong>security restrictions</strong>.
