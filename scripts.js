@@ -39,43 +39,74 @@ let titles = [
 // Your final submission should have much more data than this, and
 // you should use more than just an array of strings to store it all.
 
-// attempting the use of game data from: https://www.kaggle.com/datasets/jummyegg/rawg-game-dataset?resource=download
-function readCsv() {
-  fetch("game_info.csv")
-    .then((response) => response.txt())
-    .then((text) => {
-      console.log(text);
-    });
-  /*  let reader = new FileReader();
-  reader.readAsText(file);
+async function readCsv() {
+  const url = "game_info.json";
+  // data from https://www.kaggle.com/datasets/jummyegg/rawg-game-dataset?resource=download
+  const response = await fetch(url);
+  const data = await response.json();
+  //console.log("Data:", data);
+  //console.log("Data.name", data[0].name);
 
-  const cardContainer = document.getElementById("card-container");
-  cardContainer.innerHTML = "";
-  const templateCard = document.querySelector(".card");
+  for (let i = 0; i < data.length; i++) {
+    //console.log("Pushing: ", data[i].name);
+    titles.push(data[i].name);
+  }
 
-  reader.onload = function (event) {
-    //read file data to variable
-    let csvData = event.target.result;
-    //split data by line break making an array of rows
-    //assign to rowData
-    let rowData = csvdata.split("\n");
+  ///////
+  //  went from working on a csv file to working on a json file
+  //  in preparation for working with api's. Below is the code for that approach
+  //////
+  // data was text, headersline is now an array of length one with the value at
+  // its only index being the first line of string extracted from data
+  //const headersline = data.split("\n").slice(0, 1); //.slice(start, end): first line element only
+  //console.log("Headers: ", headersline);
 
-    //loop for created array of rows rowData
-    //for (var row = 1; row < rowData.length; row++)
-    //{}
-    //Testing first 10 rows first
-    //display data on the webpage table
-    //skip first row, row = 0, since that is the row of headers
-    for (let row = 1; row <= 10; row++) {
-      //split row by colon ' to get an array of each data
-      //respective to its header on the csv
-      rowCols = rowData[row].split(",");
-      for (let col = 0; col < rowCols.length; col++) {
-        console.log("Data: ", rowCols[col], " , ");
-        console.log("\n");
-      }
-    }
-  };*/
+  // make array of individual headers
+  //const heads = headersline[0].split(",");
+
+  //console.log("Heads:", heads, "Size: ", heads.length);
+  /*for (let h = 0; h < heads.length; h++) {
+    console.log("header: ", heads[h]);
+  }*/
+
+  //
+  //const rows = data.split("\n").slice(1); //slice(1): start from index 1, skips the headers
+  //console.log("Rows size: ", rows.length);
+
+  // for each element in the rows array
+  //rows.forEach((element) => {
+  //  const row = element.split(",");
+  //  console.log("Row: ", row);
+  //});
+  //////
+  /*
+    // data from https://www.kaggle.com/datasets/jummyegg/rawg-game-dataset?resource=download
+  const response = await fetch(url);
+  const data = await response.text();
+
+  // data was text, headersline is now an array of length one with the value at
+  // its only index being the first line of string extracted from data
+  const headersline = data.split("\n").slice(0, 1); //.slice(start, end): first line element only
+  //console.log("Headers: ", headersline);
+
+  // make array of individual headers
+  const heads = headersline[0].split(",");
+
+  //console.log("Heads:", heads, "Size: ", heads.length);
+  /*for (let h = 0; h < heads.length; h++) {
+    console.log("header: ", heads[h]);
+  }
+
+  //
+  const rows = data.split("\n").slice(1); //slice(1): start from index 1, skips the headers
+  console.log("Rows size: ", rows.length);
+
+  // for each element in the rows array
+  rows.forEach((element) => {
+    const row = element.split(",");
+    console.log("Row: ", row);
+  });
+*/
 }
 
 // This function adds cards the page to display the data in the array
@@ -84,25 +115,18 @@ function showCards() {
   cardContainer.innerHTML = "";
   const templateCard = document.querySelector(".card");
 
+  readCsv();
   for (let i = 0; i < titles.length; i++) {
     let title = titles[i];
 
     // This part of the code doesn't scale very well! After you add your
     // own data, you'll need to do something totally different here.
     let imageURL = "";
-    if (i == 0) {
-      imageURL = FRESH_PRINCE_URL;
-    } else if (i == 1) {
-      imageURL = CURB_POSTER_URL;
-    } else if (i == 2) {
-      imageURL = EAST_LOS_HIGH_POSTER_URL;
-    }
 
     const nextCard = templateCard.cloneNode(true); // Copy the template card
     editCardContent(nextCard, title, imageURL); // Edit title and image
     cardContainer.appendChild(nextCard); // Add new card to the container
   }
-  readCsv();
 }
 
 function editCardContent(card, newTitle, newImageURL) {
@@ -113,7 +137,7 @@ function editCardContent(card, newTitle, newImageURL) {
 
   const cardImage = card.querySelector("img");
   cardImage.src = newImageURL;
-  cardImage.alt = newTitle + " Poster";
+  cardImage.alt = newTitle + " Cover";
 
   // You can use console.log to help you debug!
   // View the output by right clicking on your website,
