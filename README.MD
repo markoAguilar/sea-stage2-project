@@ -1,4 +1,4 @@
-<a href="#currentProgress">Jump To Current Progress Section</a>
+<a href="#currentProgress">----------------<br>Jump To Current Progress Section<br>----------------</a>
 
 # SEA Stage 2 - Data Catalog Project
 
@@ -45,11 +45,6 @@ This is the instructions, requirements, and starter for stage two of the Snap En
 3. Submit the URL to your published website and the link to your Github repository to the google form in your email.
 
 # Current Progress
-<style>
-strong{
-color: red;
-}
-</style>
 <section id="currentProgress">
 <p>As of right now what I have been able to implement only displays when pressing
 the remove card button.
