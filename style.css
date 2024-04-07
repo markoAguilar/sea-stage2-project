@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(to bottom, pink 50%, cyan 100%);
+  background-image: linear-gradient(to top, cyan 50%, black 100%);
 }
 
 .main-header {
@@ -29,7 +29,7 @@ body {
 .card {
   background: black;
   width: 300px;
-  height: 400px;
+  height: auto;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -37,6 +37,9 @@ body {
 }
 
 .card-content {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
   padding: 20px;
   font-family: "Verdana";
   color: #777;
@@ -48,8 +51,7 @@ body {
 }
 
 .card img {
-  width: 100%;
-  height: auto;
+  height: 300px;
 }
 
 .footer {
