@@ -51,7 +51,6 @@ the remove card button.
 </p>
 <ul>
     <li>Project is being edited in VIM.</li>
-<<<<<<< HEAD
     <li>Used <strong>python</strong> command "python3 -m http.server" in
     <strong>terminal</strong> to <strong>locally host</strong> the website in order to bypass <strong>cors runtime errors</strong> where the
     browser is <strong>unable to access local files</strong> due to <strong>security restrictions</strong>.
