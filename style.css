@@ -29,6 +29,7 @@ body {
 
 /*For user input fieldset*/
 #newGameData {
+  margin: 4rem;
   display: flex;
   flex-flow: column;
   justify-content: center;

@@ -201,7 +201,6 @@ function addGame() {
   //create fieldset and all its elements and append them to the cardContainer
   const field = document.createElement("fieldset");
   field.setAttribute("id", "newGameData");
-
   const legend = document.createElement("legend");
   legend.innerText = "Enter Game Details";
   field.appendChild(legend);
@@ -214,7 +213,6 @@ function addGame() {
   titleInput.setAttribute("maxlength", "40");
   field.appendChild(titleInput);
   cardContainer.innerHTML += "<br>";
-  cardContainer.innerHTML += "<br>";
 
   const updatedInput = document.createElement("input");
   updatedInput.setAttribute("type", "text");
@@ -224,7 +222,6 @@ function addGame() {
   updatedInput.setAttribute("maxlength", "40");
   field.appendChild(updatedInput);
   cardContainer.innerHTML += "<br>";
-  cardContainer.innerHTML += "<br>";
 
   const releasedInput = document.createElement("input");
   releasedInput.setAttribute("type", "text");
@@ -233,6 +230,7 @@ function addGame() {
   releasedInput.setAttribute("max", "20");
   releasedInput.setAttribute("maxlength", "40");
   field.appendChild(releasedInput);
+  cardContainer.innerHTML += "<br>";
 
   const platformInput = document.createElement("input");
   platformInput.setAttribute("type", "text");
@@ -242,7 +240,6 @@ function addGame() {
   platformInput.setAttribute("maxlength", "40");
   field.appendChild(platformInput);
   cardContainer.innerHTML += "<br>";
-  cardContainer.innerHTML += "<br>";
 
   const genreInput = document.createElement("input");
   genreInput.setAttribute("type", "text");
@@ -251,7 +248,6 @@ function addGame() {
   genreInput.setAttribute("max", "20");
   genreInput.setAttribute("maxlength", "40");
   field.appendChild(genreInput);
-  cardContainer.innerHTML += "<br>";
   cardContainer.innerHTML += "<br>";
 
   const submitBtn = document.createElement("button");
