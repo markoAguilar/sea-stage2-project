@@ -46,9 +46,6 @@ This is the instructions, requirements, and starter for stage two of the Snap En
 
 # Current Progress
 <section id="currentProgress">
-<p>As of right now what I have been able to implement only displays when pressing
-the remove card button.
-</p>
 <ul>
     <li>Project is being edited in VIM.</li>
     <li>Used <strong>python</strong> command "python3 -m http.server" in
@@ -58,8 +55,13 @@ the remove card button.
     <li>Started off attempting to use <strong>csv file</strong> data acquired from <a target="_blank" href="https://www.kaggle.com/datasets/jummyegg/rawg-game-dataset?resource=download">Here</a> by parsing into a bunch of arrays
     with strings. Ended up using an online converter to convert <strong>csv file to json</strong>
     in preparation of possible future api integration. Used fetch in js to process this data.</li>
-    <li>Used array of objects to further implement the data I am reading. And it
+    <li>Used array of objects for data read from json file. And it
     all loads on the initial loading of the page as well.</li>
+    <li>Added fieldset for user to input data for a new game to add</li>
+    <li>Webpage now has the 2 required feature to either add or remove data</li>
+    <li>Was not able to work on the CSS or JS too much but still added some of
+    my own changes</li>
+    <li>Publishing onto GitHub Pages for submission</li>
     <li>to be continued...</li>
 </ul>
 </section>
@@ -67,4 +69,8 @@ the remove card button.
 <h3>Screenshots</h3>
 <img title="Some Progress!" alt="currentProgress" src="images/scr1.png" width="400px">
 <img title="More Progress!" alt="currentProgress2" src="images/scr2.png"
+width="400px">
+<img title="More Progress!" alt="currentProgress3" src="images/scr3.png"
+width="400px">
+<img title="More Progress!" alt="currentProgress4" src="images/scr4.png"
 width="400px">

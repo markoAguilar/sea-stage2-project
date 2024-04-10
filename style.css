@@ -1,10 +1,42 @@
+@keyframes color {
+  0% {
+    background: cyan;
+  }
+  20% {
+    background: lime;
+  }
+  40% {
+    background: purple;
+  }
+  60% {
+    background: red;
+  }
+  80% {
+    background: yellow;
+  }
+  100% {
+    background: orange;
+  }
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(to top, cyan 50%, black 100%);
+  background-image: linear-gradient(to top, pink 5%, pink 100%);
+  animation: color 15s infinite linear;
 }
 
+/*For user input fieldset*/
+#newGameData {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(to top, black 5%, darkgrey 100%);
+}
 .main-header {
   background-color: rgba(0, 0, 0, 0.3);
   padding-bottom: 10px;
