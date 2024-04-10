@@ -59,7 +59,7 @@ This is the instructions, requirements, and starter for stage two of the Snap En
     all loads on the initial loading of the page as well.</li>
     <li>Added fieldset for user to input data for a new game to add</li>
     <li>Webpage now has the 2 required feature to either add or remove data</li>
-    <li>Was not able to work on the CSS or JS too much but still added some of
+    <li>Was not able to work on the CSS or HTML too much but still added some of
     my own changes</li>
     <li>Publishing onto GitHub Pages for submission</li>
     <li>to be continued...</li>
