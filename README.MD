@@ -67,10 +67,14 @@ This is the instructions, requirements, and starter for stage two of the Snap En
 </section>
 
 <h3>Screenshots</h3>
+Initial Page
 <img title="Some Progress!" alt="currentProgress" src="images/scr1.png" width="400px">
+Page after removing cards
 <img title="More Progress!" alt="currentProgress2" src="images/scr2.png"
 width="400px">
+Page with user input fields
 <img title="More Progress!" alt="currentProgress3" src="images/scr3.png"
 width="400px">
+Page after user input with new game added
 <img title="More Progress!" alt="currentProgress4" src="images/scr4.png"
 width="400px">
