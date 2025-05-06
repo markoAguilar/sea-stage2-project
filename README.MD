@@ -1,5 +1,5 @@
-<a href="#currentProgress">----------------<br>Jump To Current Progress Section<br>----------------</a>
 <a href="https://markoaguilar.github.io/sea-stage2-project/">Published Github Website</a>
+<a href="#currentProgress">----------------<br>Jump To Current Progress Section<br>----------------</a>
 # SEA Stage 2 - Data Catalog Project
 
 This is the instructions, requirements, and starter for stage two of the Snap Engineering Academy application process.
